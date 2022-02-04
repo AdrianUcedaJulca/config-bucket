@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: EuferUceda-Pizza
+    
+########## H2SQL #################
+#  h2:
+#    console:
+#      enabled: true
+#  datasource:
+#    url: jdbc:h2:mem:testdb;DB_CLOSE_ON_EXIT=FALSE
+#    username: root
+#    password: 123
+#    driver-class-name: org.h2.Driver
+    
+########## MYSQL #################
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    generate-ddl: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecfinal_pizzas
+    username: root
+    password: admin
+    driver-class-name: com.mysql.jdbc.Driver
